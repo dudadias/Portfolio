@@ -1,0 +1,96 @@
+#contact {
+  display: flexbox;
+  height: 100vh;
+  width: auto;
+}
+
+.gridContato {
+  display: flex;
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.cardContatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.cardContact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 16rem;
+  border: 3px solid #eaeaea;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+  padding: 1%;
+}
+
+.nameContact {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  transition: color 1s ease;
+}
+
+.nameContact:hover {
+  color: gray;
+}
+
+.contact-itens {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-itens a {
+  text-decoration: none;
+}
+
+.imgContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gridTitleContact {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: auto;
+}
+
+@media (max-width: 1200px) {
+
+  #contact {
+    height: auto;
+    width: auto;
+  }
+
+  .cardContatos {
+    width: 80%;
+  }
+
+  .cardContact {
+    width: 10rem;
+  }
+
+  .gridContato {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 20vh;
+  }
+  
+}

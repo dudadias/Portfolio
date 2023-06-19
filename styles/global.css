@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #fffbf9;
+  text-decoration: none;
+}
+
+.navetotal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 12%;
+  position: fixed;
+  z-index: 1;
+}
+
+.spacee {
+  width: 30%;
+  background-color: #a83133;
+}
+
+.naveitens {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  justify-content: center;
+  background-color: #a83133;
+}
+
+.naveitens ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.naveitens a {
+  color: white;
+  text-decoration: none;
+}
+
+.naveitens a:hover {
+  color: #d6c0c0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #171515;
+}
+
+.footer p {
+  color: #aaa;
+}
+
+.title {
+  font-size: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.cardtitle {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  order: 1;
+}
+
+.menu {
+  display: none;
+}
+
+@keyframes pisca {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .navetotal {
+    background-color: #a83133;
+  }
+
+  .spacee {
+    display: none;
+  }
+
+  .naveitens {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+  }
+
+  .naveitens ul {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .naveitens ul a {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  label[for='menu'] {
+    display: block;
+  }
+
+  #menu:checked ~ .naveitens {
+    right: 0;
+  }
+
+  .close-menu-label::after {
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    content: '≡';
+    justify-content: end;
+    font-size: 350%;
+    width: 100%;
+    height: 12%;
+    margin-top: 0;
+    cursor: pointer;
+    color: white;
+  }
+
+  .menu:checked ~ .naveitens {
+    top: 0;
+  }
+
+  .cardtitle {
+    height: 35vh;
+  }
+  
+}

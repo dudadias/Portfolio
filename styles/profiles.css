@@ -1,0 +1,92 @@
+#profiles {
+  display: flexbox;
+  height: auto;
+  width: auto;
+}
+
+.skillscontent a {
+  display: inline;
+  text-align: center;
+}
+
+.skil {
+  font-size: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.gridskills {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.skills-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  width: 100%;
+  height: 100%;
+  align-content: center center;
+  align-items: center center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.skill01Profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  width: 300px;
+  height: 280px;
+}
+
+.skill01Profiles a {
+  text-decoration: none;
+}
+
+.skills {
+  text-align: center;
+}
+
+.nameskill {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  color:black;
+}
+
+@media (max-width: 1200px) {
+
+  #skills {
+    display: flexbox;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  .gridDesenho {
+    display: none;
+  }
+
+  .gridskills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-itens {
+    display: flexbox;
+    width: auto;
+    height: auto;
+  }
+  
+}

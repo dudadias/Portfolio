@@ -1,0 +1,105 @@
+#about {
+  display: flexbox;
+  height: 100vh;
+  width: auto;
+  margin-bottom: 10%;
+}
+
+.aboutdisplay {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutdisplayy {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.photocard {
+  width: 300px;
+  height: 300px;
+  border: 3px 3px solid #eaeaea;
+  border-radius: 3px;
+  box-shadow: 10px 5px 5px rgba(105, 96, 96, 0.685);
+}
+
+.aboutcard {
+  padding: 1%;
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 85%;
+  border: 3px solid #eaeaea;
+  border-radius: 5px;
+}
+
+.aboutme {
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+}
+
+.aboutcontent {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  padding: 1%;
+}
+
+@media (max-width: 1200px) {
+
+  #about {
+    height: auto;
+    width: auto;
+  }
+  
+  .aboutdisplay {
+    width: auto;
+    height: auto;
+  }
+
+  .aboutdisplayy {
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+    padding: 10%;
+  }
+
+  .aboutcontent {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center
+  }
+
+  .aboutcard {
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    flex-direction: row;
+    padding: 5%;
+  }
+  
+  .aboutme {
+    display: flexbox;
+    flex-direction: row;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    }
+
+}

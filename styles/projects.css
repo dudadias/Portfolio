@@ -1,0 +1,91 @@
+#projects {
+  display: flexbox;
+  height: auto;
+  width: auto;
+}
+
+.skill01Profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  width: 300px;
+  height: 280px;
+}
+
+.gridprojects {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+.project {
+  font-size: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.projetos a {
+  display: inline;
+  text-align: center;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.card {
+  height: 18rem;
+  width: 22rem;
+  border: 3px solid #eaeaea;
+  border-radius: 25px;
+  transition: border-color 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.breve {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  border-color: #a83133;
+}
+
+.projectscontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vw;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 1200px) {
+
+  #projects {
+    min-height: 100vh;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .projectscontent {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}

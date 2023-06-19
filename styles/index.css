@@ -1,0 +1,100 @@
+#index {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.indexdisplay {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.name {
+  font-size: 50px;
+  color: black;
+}
+
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 320px;
+}
+
+.svg-wrapper a {
+  text-decoration: none;
+}
+
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #a83133;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: black;
+  top: -48px;
+  position: relative;
+  text-align: center;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+.indexdisplayy {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+}
+
+.around {
+  width: 400px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+@media (max-width: 1200px) {
+
+  #index {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .indexdisplayy {
+    display: none;
+  }
+  
+}
