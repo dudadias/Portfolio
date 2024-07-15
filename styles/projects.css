@@ -41,10 +41,10 @@
 }
 
 .card {
-  height: 18rem;
-  width: 22rem;
+  height: 186px;
+  width: 400px;
   border: 3px solid #eaeaea;
-  border-radius: 25px;
+  border-radius: 5px;
   transition: border-color 1s ease;
   display: flex;
   align-items: center;
