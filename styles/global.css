@@ -22,7 +22,7 @@ body {
 
 .spacee {
   width: 30%;
-  background-color: #a83133;
+  background-color: #b778d6;
 }
 
 .naveitens {
@@ -31,7 +31,7 @@ body {
   text-align: center;
   width: 70%;
   justify-content: center;
-  background-color: #a83133;
+  background-color: #b778d6;
 }
 
 .naveitens ul {
@@ -103,7 +103,8 @@ body {
 @media (max-width: 1200px) {
 
   .navetotal {
-    background-color: #a83133;
+  background-color: #b778d6;
+ 
   }
 
   .spacee {
